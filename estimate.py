@@ -16,5 +16,3 @@ def monte_carlo(n):
     else:
       s+=1
   return (4*(c/(c+s)))
-  
-
