@@ -1,12 +1,29 @@
+<!--
 <html>
   <head>
-    <title> Congratulations ! </title>
+   
    </head>
-  <body>
-  body{ text-colour : red}
+  <body> -->
+{% extends "homepage.html"%}
+ <!--<title> Congratulations ! </title> -->
+  
+  {% block body %}
+    <table border=2px>
+    <thead>
+    <tr>
+    <th> NAME &nbsp&nbsp&nbsp  </th>
+    <th> GENDER </th>
+    </tr>
+    </thead>
+    <tbody>
    {% for name,gender in data %}
-   <li> {{name}} :: {{gender}} </li>
+   <tr> <td> {{name}} &nbsp&nbsp&nbsp</td> <td> {{gender}} </td> </tr>
    {% endfor %}
+    </tbody>
+  </table>
+  {%endblock%}
+<!--  
   </body>
+  
 </html>
-
+-->

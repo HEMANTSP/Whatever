@@ -1,0 +1,36 @@
+<html>
+  <title>
+    Check out!
+  </title>
+  
+  <head>
+    <h1> Hello mate!</h1>
+  </head>
+  
+  <body>
+  <hr />
+  <form method = "post">
+  <label for = "Rounds"> How many times? </label>
+  <input name = "Rounds" type= "number" id = "iterations" required />
+  <br /> 
+  <div>
+  <input type = "radio" id ="MC" name="algo" value="mc" required />
+  <label for="MC"> Monte Carlo Simulation </label>
+  </div>
+  <div>
+  <input type = "radio" id ="Wl" name="algo" value="wl" required />
+  <label for="Wl"> Wallis Function Product </label>
+  </div>
+  
+  <input type = "submit" value="Compute">
+  </form>
+  <hr />
+  <div> Choose the method of estimation </div>
+  <div> <a href="/mc"> Monte Carlo </a> </div>
+  <div> <a href="/wl"> Wallis Formula </a> </div>
+    
+  <hr />
+  
+  <center> &copy Copyright 2007 </center>
+  </body>
+</html>
